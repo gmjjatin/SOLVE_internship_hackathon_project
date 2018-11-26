@@ -1,4 +1,4 @@
-# SOLVE_intership_hackathon_project
+# SOLVE_internship_hackathon_project
 Internship project at Indian Road Safety Campaign for Toyota hackathon 2018.
 
 IRSC has following webite :https://www.road-safety.co.in/
@@ -18,6 +18,8 @@ Along with HTML ,CSS ,Bootstrap -- swiper.js , jquery easy /lazy load , page loa
 
 Application logic:
 It accepts a form which passes the action to a Java servlet .Java mailer has also been used to send important mails.
+
+Functionalities : Login , Register authentication , Java mailer for sending important mails to registered users.
 
 Deployed on :
 Google cloud platform
