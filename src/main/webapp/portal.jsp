@@ -92,7 +92,7 @@ if(session.getAttribute("uemail")==null){
                             <a href="#guide" onclick="">GUIDELINES</a>
                         </li>
                         <li>
-                            <a href="#" onclick="">Q/A</a>
+                            <a href="onlineTest.jsp" target="_blank" onclick="">Q/A</a>
                         </li>
                     </ul>
                 </div>
@@ -103,7 +103,7 @@ if(session.getAttribute("uemail")==null){
         <div class="container"  style="margin-top: 20vh; text-align:center;">
         	<h2 style="display:inline-block;">GITHUB TUTORIALS</h2>
           <div class="row" id="github">
-            
+
             <div class="col-lg-4 col-md-6 col-xs-12"><iframe width="560" height="315" src="https://www.youtube.com/embed/0fKg7e37bQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
             <div class="col-lg-4 col-md-6 col-xs-12"><iframe width="560" height="315" src="https://www.youtube.com/embed/xuB1Id2Wxak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -116,13 +116,13 @@ if(session.getAttribute("uemail")==null){
 </div></div><br><br><br>
 
           <h2 style="display:inline-block;">ALGORITHMS</h2>
-          
+
             <div class="row" id="algo">
             <div class="col-lg-4 col-md-6 col-xs-12">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Da5TOXCwLSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div></div><br><br><br>
           <h2 style="display:inline-block;">GUIDELINES FOR HACKTHON</h2>
-          
+
           <div class="row" id="guide">
             <div class="col-lg-4 col-md-6 col-xs-12">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/alVDGvS55hw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -148,7 +148,7 @@ if(session.getAttribute("uemail")==null){
                         </div>
                         <br>
                         <div class="b">
-                            <small>&#160;<a href="https://www.road-safety.co.in/" target="_blank">Indian Road Safety Campaign</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+                            <small>&#160;<a href="https://www.road-safety.co.in/" target="_blank">Indian Road Safety Campaign</a>&nbsp;&nbsp;&nbsp;&nbsp;
                             <a href="assets/docs/terms.pdf" target="_blank">TERMS & CONDITIONS</a>
                               <br> 201, Building No. 252a, Shahpur Jat, Nearby Govindum Sweets, New Delhi, 110049.
                              </small>
@@ -170,7 +170,7 @@ if(session.getAttribute("uemail")==null){
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/jquery.collapse.js"></script>
-    
+
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>

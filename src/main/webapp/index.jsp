@@ -166,7 +166,7 @@ $(window).load(function() {
                 </h4><br>
                 <h5 class="wow fadeInUp ib animated" style="color: white; position: relative; top: -5vh; visibility: visible; animation-duration: 3s; animation-delay: 3.25s;" data-wow-duration="3s" data-wow-delay="3.25s">Hours : Minutes : Seconds</h5><br>
                 
-                <h2 id="countdown-timer" class="wow fadeInUp ib animated" style="color: white; position: relative; top: -5vh; visibility: visible; animation-duration: 3s; animation-delay: 4.25s;" data-wow-duration="3s" data-wow-delay="3.25s" id="">
+                <h2 id="countdown-timer" class="wow fadeInUp ib animated" style="color: white; position: relative; top: -5vh; visibility: visible; animation-duration: 3s; animation-delay: 4.25s;" data-wow-duration="3s" data-wow-delay="3.25s" >
 
                 </h2>
                 <br>
