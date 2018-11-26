@@ -98,6 +98,51 @@ body {
 	border: 1px solid #ccc;
 	font-size: 14px;
 }
-footer{
-	margin-top: 40px;
+#footer{
+background-color: rgb(44, 58, 71); display: block;  margin-top:130px;padding-top:20px;
+position:relative;width:100%;bottom:0px;
 }
+
+        .signup-input {
+            border: 0px;
+            border-bottom: 2px solid #999;
+            width: 80%;
+        }
+
+        ::-webkit-input-placeholder {
+            font-style: normal;
+        }
+
+        ::-moz-placeholder {
+            font-style: normal;
+        }
+
+        :-ms-input-placeholder {
+            font-style: normal;
+        }
+
+        ::placeholder {
+            font-style: normal;
+        }
+
+        .error {
+            color: #c0392b;
+            font-size: 14px;
+            display: inline-block;
+            padding: 2px 8% 2px 8%;
+            text-justify: inter-word;
+        }
+        .success{
+            color: green;
+            font-size: 14px;
+            display: inline-block;
+            padding: 2px 8% 2px 8%;
+            text-justify: inter-word;
+        }
+        .c{
+	text-align:center;
+}
+.ib{
+	display:inline-block;
+}
+    

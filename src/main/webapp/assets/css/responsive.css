@@ -198,3 +198,18 @@ Author URI: http://www.xpeedstudio.com
 
 
 
+.c{
+	text-align:center;
+	
+}
+.ib{
+	display:inline-block;
+}
+#footer{
+	display:inline-block;
+  position:relative;
+  bottom :0px;
+  background-color: #2C3A47;
+  width:100%;
+  
+}
