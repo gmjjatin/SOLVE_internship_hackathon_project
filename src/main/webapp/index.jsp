@@ -160,7 +160,7 @@ $(window).load(function() {
                 <h6 class="wow fadeInUp  animated ib" data-wow-duration="3s" data-wow-delay="3.25s" id="date-style" style="visibility: visible; animation-duration: 2.5s; animation-delay: 3.25s;">IN ASSOCIATION
                     WITH</h6><br>
 
-                    <a href="https://road-safety.co.in/" target="_blank"><img data-wow-duration="2.5s" data-wow-delay="3.25s" style="margin-top: 0px; width: 40%; max-width: 150px;  visibility: visible; animation-duration: 3s; animation-delay: 3.25s;" src="./assets/images/irsc.png" class="img-fluid mx-auto wow zoomIn ib animated" id="hackabit-image"></a><br><br><br>
+                    <a href="https://road-safety.co.in/" style="text-align:center!important;" target="_blank"><img data-wow-duration="2.5s" data-wow-delay="3.25s" style="margin-top: 0px;display:inline-block!important; width: 40%; max-width: 150px;  visibility: visible; animation-duration: 3s; animation-delay: 3.25s;" src="./assets/images/irsc.png" class="img-fluid mx-auto wow zoomIn ib animated" id="hackabit-image"></a><br><br><br>
                 <h4 class="wow fadeInUp ib animated" style="color: white; position: relative; top: -5vh; visibility: visible; animation-duration: 3s; animation-delay: 3.25s;" data-wow-duration="3s" data-wow-delay="3.25s" id="">
                     Time Left to Whack And  Reign With Your Code
                 </h4><br>

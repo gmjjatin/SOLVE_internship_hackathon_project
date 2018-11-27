@@ -288,7 +288,7 @@ function changeQuestion(e){
 
 function changeToNextQuestion(e){
 	
-	var id=e.originalTarget.parentNode.parentNode.parentNode.id;
+	var id=e.target.parentElement.parentElement.parentElement.id;
 	id=id.split("q")[1];
 	id=parseInt(id,10)
 	id++;
@@ -314,7 +314,7 @@ function changeToNextQuestion(e){
 }
 function changeToPreviousQuestion(e){
 	
-	var id=e.originalTarget.parentNode.parentNode.parentNode.id;
+	var id=e.target.parentElement.parentElement.parentElement.id;
 	id=id.split("q")[1];
 	id=parseInt(id,10)
 	id--;
