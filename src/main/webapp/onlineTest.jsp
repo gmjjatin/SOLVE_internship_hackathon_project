@@ -25,7 +25,7 @@ if(session.getAttribute("uemail")==null){
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootsnav.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="assets/css/portal.css">
     <link rel="stylesheet" href="assets/css/onlineTest.css">
 
@@ -107,105 +107,263 @@ if(session.getAttribute("uemail")==null){
         	<button type="button" class="btn btn-start-test" onclick="startTest()">START TEST !</button>
         </div>
 		<div class="row" id="testPaper">
-		
-		<div class="col-12" >
-		<h4 id="timer"></h4>		
-		</div>
-		
-		
-		
         <div class="col-lg-3 col-xs-10 questionPanel">
-        <div class="row alert alert-success">
-        <p>Question Panel</p>
-        </div>
-        <div class="row alert alert-info qpinfo" id="qp1" onclick="changeQuestion(event)">
-        <p>1. Lorem ipsum</p>
-        </div>
+        <div class="row white"><p id="timer"></p></div>
         <hr>
-		<div class="row qpinfo" id="qp2" onclick="changeQuestion(event)">
-        <p>2. Lorem ipsum</p>
-        </div>
-        <hr>
-		<div class="row qpinfo" id="qp3" onclick="changeQuestion(event)">
-        <p>3. Lorem ipsum</p>
-        </div>
-
+        <div class="row white">
+		<div class="col-xs-6"><img class="img-fluid" alt="Porfile Pic" src="assets/images/2.png" width="60px"></div>
+		<div class="col-xs-6"><p>TEAM NAME <br>TEAM LEADER</p></div>
         </div>
         
-        <div class="col-lg-6 col-xs-10 questionContent">
-        <div class="col-lg-12 qp" id="q1">
-        <br>
+        <div class="row">
+        <div class="col-xs-12 alert alert-success" id="typeOfQuestion">General</div>
+        <p>Choose a question:</p>
+        </div>
+        <!-- for general section :question btn -->
+        <div class="col-xs-12 qpBtn" id="GeneralBtn">
+		<button class="btn btn-light GeneralBtn  alert alert-info" id="Generalqp1" onclick="changeQuestion(event)">Q1</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp2" onclick="changeQuestion(event)">Q2</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp3" onclick="changeQuestion(event)">Q3</button>
+		</div>
+		<!-- for Maths section :question btn -->
+		<div class="col-xs-12 qpBtn" id="MathsBtn"> 
+		<button class="btn btn-light MathsBtn alert alert-info" id="Mathsqp1" onclick="changeQuestion(event)">Q1</button>
+		<button class="btn btn-light MathsBtn" id="Mathsqp2" onclick="changeQuestion(event)">Q2</button>
+		<button class="btn btn-light MathsBtn" id="Mathsqp3" onclick="changeQuestion(event)">Q3</button>
+		</div>
+		<!-- for Science section :question btn -->
+		<div class="col-xs-12 qpBtn" id="ScienceBtn">
+		<button class="btn btn-light ScienceBtn alert alert-info" id="Scienceqp1" onclick="changeQuestion(event)">Q1</button>
+		<button class="btn btn-light ScienceBtn" id="Scienceqp2" onclick="changeQuestion(event)">Q2</button>
+		<button class="btn btn-light ScienceBtn" id="Scienceqp3" onclick="changeQuestion(event)">Q3</button>
+		</div>
+        
+        <div class="col-xs-12" style="margin:0 0 10px 0;">
+		<p style="margin:10px 0 0 0;">Question Info:</p>
+		<button class="btn btn-light" disabled>Not Visited</button>
+		<button class="btn btn-success" disabled>Answered</button>
+		<button class="btn btn-danger" disabled>Not Answered</button>
+		
+		
+		<button class="btn btn-warning" disabled>Marked for review</button>
+		<button class="btn btn-info" disabled>Reviewed & Answered	</button>
+		</div>
+        </div>
+        
+        <div class="col-lg-6 col-xs-10">
+        <div class="row alert alert-success">
+        <div class="col-12 ">
+        	<button class="btn btn-primary" type="button" onClick="changeSection(event)">General</button>
+        	<button class="btn btn-primary" type="button" onClick="changeSection(event)">Maths</button> 
+        	<button class="btn btn-primary" type="button" onClick="changeSection(event)">Science</button>
+			<br>
+        </div>
+        </div>
+        
+        <form>
+        <div class="row white section" id="General">
+        <div class="col-lg-12 General" id="Generalq1">
+        
         	<div class="row">
-        	<h2>Lorem ipsum 1</h2>
+        	<br>
+        	<h2>general ipsum 1</h2>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
-        	<form>
-        	<label><input type="radio" name="q1" value="1.Lorem ipsum"> 1.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q1" value="2.Lorem ipsum"> 2.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q1" value="3.Lorem ipsum"> 3.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q1" value="4.Lorem ipsum"> 4.Lorem ipsum</label>
-        	</form>
+        	 
+        	<label><input type="radio" name="q1" value="1.science ipsum"> 1.general ipsum1</label><br>
+        	<label><input type="radio" name="q1" value="2.science ipsum"> 2.general ipsum1</label><br>
+        	<label><input type="radio" name="q1" value="3.science ipsum"> 3.general ipsum1</label><br>
+        	<label><input type="radio" name="q1" value="4.science ipsum"> 4.general ipsum1</label>
+        	 
         	</div>
         	</div>
-        	<div class="col-lg-2">
         	
         	</div>
-        	<div class="col-lg-2">
-        	<button type="button" onclick="changeToNextQuestion(event)" class="btn btn-primary">NEXT</button>
-        	</div>
-        	</div>
         </div>
-        <div class="col-lg-12 qp" id="q2" style="display:none;">
-        <br>
+        <div class="col-lg-12 General hide" id="Generalq2" >
+        
         <div class="row">
-        	<h2>Lorem ipsum 2</h2>
+        <br>
+        	<h2>general ipsum 2</h2>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
-        	<form>
-        	<label><input type="radio" name="q2" value="1.Lorem ipsum"> 1.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q2" value="2.Lorem ipsum"> 2.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q2" value="3.Lorem ipsum"> 3.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q2" value="4.Lorem ipsum"> 4.Lorem ipsum</label>
-        	</form>
+        	
+        	<label><input type="radio" name="q2" value="1.science ipsum"> 1.general ipsum2</label><br>
+        	<label><input type="radio" name="q2" value="2.science ipsum"> 2.general ipsum2</label><br>
+        	<label><input type="radio" name="q2" value="3.science ipsum"> 3.general ipsum2</label><br>
+        	<label><input type="radio" name="q2" value="4.science ipsum"> 4.general ipsum2</label>
+        	
         	</div>
         	</div>
-        	<div class="col-lg-2">
-        	<button type="button" onclick="changeToPreviousQuestion(event)" class="btn btn-secondary">PREVIOUS</button>
-        	</div>
-        	<div class="col-lg-2">
-        	<button type="button" onclick="changeToNextQuestion(event)" class="btn btn-primary">NEXT</button>
-        	</div>
+        	
         	</div>
         </div>
-        <div class="col-lg-12 qp" id="q3" style="display:none;">
-        <br>
+        <div class="col-lg-12 General hide" id="Generalq3">
+        
         <div class="row">
-        	<h2>Lorem ipsum 3</h2>
+        <br>
+        	<h2>general ipsum 3</h2>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
-        	<form>
-        	<label><input type="radio" name="q3" value="1.Lorem ipsum"> 1.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q3" value="2.Lorem ipsum"> 2.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q3" value="3.Lorem ipsum"> 3.Lorem ipsum</label><br>
-        	<label><input type="radio" name="q3" value="4.Lorem ipsum"> 4.Lorem ipsum</label>
-        	</form>
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
         	</div>
         	</div>
-        	<div class="col-lg-2">
-        	<button type="button" onclick="changeToPreviousQuestion(event)" class="btn btn-secondary">PREVIOUS</button>
+        	
         	</div>
-        	<div class="col-lg-2">
-        	<button type="button" onclick="" class="btn btn-success">SUBMIT</button>
-        	</div>
-        	</div>
+        	
         </div>
         
-		</div>
         </div>
-
+        
+        <!-- for maths section -->
+        <div class="row white section hide" id="Maths">
+        <div class="col-lg-12 Maths" id="Mathsq1">
+        
+        	<div class="row">
+        	<br>
+        	<h2>maths ipsum 1</h2>
+        	<hr>
+        	<div class="col-lg-6">
+        	<div class="option">
+        	
+        	<label><input type="radio" name="q1" value="1.maths ipsum"> 1.maths ipsum1</label><br>
+        	<label><input type="radio" name="q1" value="2.maths ipsum"> 2.maths ipsum1</label><br>
+        	<label><input type="radio" name="q1" value="3.maths ipsum"> 3.maths ipsum1</label><br>
+        	<label><input type="radio" name="q1" value="4.maths ipsum"> 4.maths ipsum1</label>
+        	
+        	</div>
+        	</div>
+        	
+        	</div>
+        </div>
+        <div class="col-lg-12 Maths hide" id="Mathsq2" >
+        
+        <div class="row">
+        <br>
+        	<h2>maths ipsum 2</h2>
+        	<hr>
+        	<div class="col-lg-6">
+        	<div class="option">
+        	
+        	<label><input type="radio" name="q2" value="1.maths ipsum"> 1.maths ipsum2</label><br>
+        	<label><input type="radio" name="q2" value="2.maths ipsum"> 2.maths ipsum2</label><br>
+        	<label><input type="radio" name="q2" value="3.maths ipsum"> 3.maths ipsum2</label><br>
+        	<label><input type="radio" name="q2" value="4.maths ipsum"> 4.maths ipsum2</label>
+        	
+        	</div>
+        	</div>
+        	</div>
+        </div>
+        <div class="col-lg-12 Maths hide" id="Mathsq3">
+        
+        <div class="row">
+        <br>
+        	<h2>maths ipsum 3</h2>
+        	<hr>
+        	<div class="col-lg-6">
+        	<div class="option">
+        	 
+        	<label><input type="radio" name="q3" value="1.maths ipsum"> 1.maths ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.maths ipsum"> 2.maths ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.maths ipsum"> 3.maths ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.maths ipsum"> 4.maths ipsum3</label>
+        	 
+        	</div>
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        
+        </div>
+        <!-- for general science -->
+        <div class="row white section hide" id="Science" >
+        <div class="col-lg-12 Science" id="Scienceq1">
+        	
+        	<div class="row">
+        	<br>
+        	<h2>science ipsum 1</h2>
+        	<hr>
+        	<div class="col-lg-6">
+        	<div class="option">
+        	 
+        	<label><input type="radio" name="q1" value="1.science ipsum"> 1.science ipsum 1</label><br>
+        	<label><input type="radio" name="q1" value="2.science ipsum"> 2.science ipsum 1</label><br>
+        	<label><input type="radio" name="q1" value="3.science ipsum"> 3.science ipsum 1</label><br>
+        	<label><input type="radio" name="q1" value="4.science ipsum"> 4.science ipsum 1</label>
+        	 
+        	</div>
+        	</div>
+        	
+        	</div>
+        </div>
+        <div class="col-lg-12 Science hide" id="Scienceq2" >
+        
+        <div class="row">
+        <br>
+        	<h2>science ipsum 2</h2>
+        	<hr>
+        	<div class="col-lg-6">
+        	<div class="option">
+        	 
+        	<label><input type="radio" name="q2" value="1.science ipsum"> 1.science ipsum 2</label><br>
+        	<label><input type="radio" name="q2" value="2.science ipsum"> 2.science ipsum 2</label><br>
+        	<label><input type="radio" name="q2" value="3.science ipsum"> 3.science ipsum 2</label><br>
+        	<label><input type="radio" name="q2" value="4.science ipsum"> 4.science ipsum 2</label>
+        	 
+        	</div>
+        	</div>
+        	
+        	</div>
+        </div>
+        <div class="col-lg-12 Science hide" id="Scienceq3" >
+        
+        <div class="row">
+        <br>
+        	<h2>science ipsum 3</h2>
+        	<hr>
+        	<div class="col-lg-6">
+        	<div class="option">
+        	 
+        	<label><input type="radio" name="q3" value="1.science ipsum"> 1.science ipsum 3</label><br>
+        	<label><input type="radio" name="q3" value="2.science ipsum"> 2.science ipsum 3</label><br>
+        	<label><input type="radio" name="q3" value="3.science ipsum"> 3.science ipsum 3</label><br>
+        	<label><input type="radio" name="q3" value="4.science ipsum"> 4.science ipsum 3</label>
+        	 
+        	</div>
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        
+        </div>
+		<br>
+		<div class="row alert alert-success">
+		
+			<div class="col-lg-6">
+			<button type="button" class="Generalq1" id="markBtn" onclick="markForReview(event)" class="btn btn-blue">MARK FOR REVIEW</button>
+        	<button type="button" class="Generalq1" id="previousBtn" onclick="changeToPreviousQuestion(event)" class="btn btn-grey">PREVIOUS</button>
+        	<button type="button" class="Generalq1" id="nextBtn" onclick="changeToNextQuestion(event)" class="btn btn-darkblue">NEXT</button>
+        	</div>
+        	
+        	<div class="col-lg-3" style="float:right;">
+        	<button type="submit" onclick="" class="btn btn-orange">SUBMIT</button>
+        	</div>
+		
+		</div>
+		</form>
+        </div>
+		
+        </div>
         </div>
 		<br>
 		<br>
@@ -241,7 +399,8 @@ if(session.getAttribute("uemail")==null){
                 </div>
         </footer>
 
-    </div>
+    
+</div>
 </div>
 
 	<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
@@ -261,83 +420,171 @@ function startTest(){
 	document.getElementById("startTest").style.display="none";
 	document.getElementById("testPaper").style.display="block";
 	document.getElementById("timer").style.display="inline-block";
+	var count = 60*60;
+	var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+	function timer() {
+	    count = count - 1;
+	    if (count == -1) {
+	        clearInterval(counter);
+	        return;
+	    }
+
+	    var seconds = count % 60;
+	    var minutes = Math.floor(count / 60);
+	    var hours = Math.floor(minutes / 60);
+	    minutes %= 60;
+	    hours %= 60;
+
+	    document.getElementById("timer").innerHTML ="Time: "+ hours +":"+ minutes +":"+ seconds ;
+	}
+}
+
+function changeSection(e){
+	//hide all the section
+	var hideClassName=document.getElementsByClassName("section");
+	for(var i=0;i<hideClassName.length;i++)
+		{
+
+		hideClassName[i].classList.add("hide");
+		} 
+	var showId=e.target.textContent;
+	//show current section
+	document.getElementById(showId).classList.remove("hide");
+	
+	//hide all the question panel
+	var hideSectionIds=document.getElementsByClassName("qpBtn");
+	for(var i=0;i<hideSectionIds.length;i++)
+	{
+
+		hideSectionIds[i].classList.add("hide");
+	} 
+	//show current section question panel
+	document.getElementById(showId+"Btn").classList.remove("hide");
+	
+	
+	//change question panel heading
+	document.getElementById("typeOfQuestion").innerHTML=showId;
+	
+	//add previous question in the classlist of previous and previous button
+	//removing
+	document.getElementById("nextBtn").className="";
+	document.getElementById("previousBtn").className="";
+	//now adding
+	
+	document.querySelector("."+showId)
+	document.getElementById("nextBtn").classList.add(showId+"q"+previousQId);
+	document.getElementById("previousBtn").classList.add(showId+"q"+previousQId);
+	
 }
 function changeQuestion(e){
+	//getting the id for determining the section as well
+	var id=e.target.id;
 	
-	//changing the question to the clicked one
-	var allQuestion=document.getElementsByClassName("qp");
-	 for(var i=0;i<allQuestion.length;i++){
-		allQuestion[i].style.display="none";
+	//hiding all question in current section
+	var allQuestion=document.getElementsByClassName(id.split("qp")[0]);
+	
+	for(var i=0;i<allQuestion.length;i++){
+		allQuestion[i].classList.add("hide");
 	}
-	var id=e.srcElement.parentNode.id;
-	id=id.split("p")[1];
+	//showing clicked question in current section
 	
-	var currentQuestion=document.getElementById("q"+id);
-	currentQuestion.style.display="inline-block";
+	document.getElementById(id.split("qp")[0]+"q"+id.split("qp")[1]).classList.remove("hide");
 	
 	
 	//remove alert color from previous question panel
-	var allQuestionPanelInfo=document.getElementsByClassName("alert-info");
-	allQuestionPanelInfo[0].classList.remove("alert");
-	allQuestionPanelInfo[0].classList.remove("alert-info");
+	var hideQColor=document.getElementsByClassName(id.split("qp")[0]+"Btn");
+	for(var i=0;i<hideQColor.length;i++){
+		hideQColor[i].classList.remove("alert");
+		hideQColor[i].classList.remove("alert-info");
+	}
+	
 	//add alert color to clicked question
-	e.srcElement.parentNode.classList.add("alert");
-	e.srcElement.parentNode.classList.add("alert-info");
+
+	e.target.classList.add("alert");
+	e.target.classList.add("alert-info");
+	
+	//add next question class to next and previous button
+	document.getElementById("nextBtn").className="";
+	document.getElementById("nextBtn").classList.add(id.split("p")[0]+id.split("p")[1]);
+	document.getElementById("previousBtn").className="";
+	document.getElementById("previousBtn").classList.add(id.split("p")[0]+id.split("p")[1]);
 	
 }
 
 function changeToNextQuestion(e){
 	
-	var id=e.target.parentElement.parentElement.parentElement.id;
-	id=id.split("q")[1];
-	id=parseInt(id,10)
-	id++;
-	panelId="qp"+id;
-	id="q"+id;
-	//now make id visible rest all invisible
-	var allQuestion=document.getElementsByClassName("qp");
-	 for(var i=0;i<allQuestion.length;i++){
-		allQuestion[i].style.display="none";
+	var id=e.target.className;
+	nextQId=parseInt(id.split("q")[1],10);
+	nextQId++;
+	//ids of all question of current section
+	var allQuestion=document.getElementsByClassName(id.split("q")[0]);
+	//return if at last question and user presses next
+	if(nextQId>allQuestion.length){
+		return;
 	}
-	 
-	 var currentQuestion=document.getElementById(id);
-		currentQuestion.style.display="inline-block";
-		
-		//remove alert color from previous question panel
-		var allQuestionPanelInfo=document.getElementsByClassName("alert-info");
-		allQuestionPanelInfo[0].classList.remove("alert");
-		allQuestionPanelInfo[0].classList.remove("alert-info");
-		//add alert color to clicked question
-		document.getElementById(panelId).classList.add("alert");
-		document.getElementById(panelId).classList.add("alert-info");
+	//make current question of current section hidden
+	document.getElementById(id).classList.add("hide");
 	
+	 //make next question visible of current section
+	 document.getElementById(id.split("q")[0]+"q"+nextQId).classList.remove("hide");
+		
+		
+	//remove alert color from previous question in panel
+		var hideQColor=document.getElementById(id.split("q")[0]+"qp"+id.split("q")[1]);
+		
+			hideQColor.classList.remove("alert");
+			hideQColor.classList.remove("alert-info");
+	
+	//add alert color to next question in panel
+			var nextQColor=document.getElementById(id.split("q")[0]+"qp"+nextQId);
+			nextQColor.classList.add("alert");
+			nextQColor.classList.add("alert-info");
+	
+	//add next question in the classlist of next and previous button
+		//removing
+		document.getElementById("nextBtn").className="";
+		document.getElementById("previousBtn").className="";
+		//now adding
+		document.getElementById("nextBtn").classList.add(id.split("q")[0]+"q"+nextQId);
+		document.getElementById("previousBtn").classList.add(id.split("q")[0]+"q"+nextQId);
 }
 function changeToPreviousQuestion(e){
 	
-	var id=e.target.parentElement.parentElement.parentElement.id;
-	id=id.split("q")[1];
-	id=parseInt(id,10)
-	id--;
-	panelId="qp"+id;
-	id="q"+id;
-	//now make id visible rest all invisible
-	var allQuestion=document.getElementsByClassName("qp");
-	 for(var i=0;i<allQuestion.length;i++){
-		allQuestion[i].style.display="none";
+	var id=e.target.className;
+	var previousQId=parseInt(id.split("q")[1],10);
+	previousQId--;
+	
+	//return if at first question and user presses previous
+	if(previousQId<0){
+		return;
 	}
-		 
-	 var currentQuestion=document.getElementById(id);
-		currentQuestion.style.display="inline-block";
+	//make current question of current section hidden
+	document.getElementById(id).classList.add("hide");
+	
+	 //make previous question visible of current section
+	 document.getElementById(id.split("q")[0]+"q"+previousQId).classList.remove("hide");
 		
-		//remove alert color from previous question panel
-		var allQuestionPanelInfo=document.getElementsByClassName("alert-info");
-		allQuestionPanelInfo[0].classList.remove("alert");
-		allQuestionPanelInfo[0].classList.remove("alert-info");
-		//add alert color to clicked question
-		document.getElementById(panelId).classList.add("alert");
-		document.getElementById(panelId).classList.add("alert-info");
+		
+	//remove alert color from previous question in panel
+		var hideQColor=document.getElementById(id.split("q")[0]+"qp"+id.split("q")[1]);
+			hideQColor.classList.remove("alert");
+			hideQColor.classList.remove("alert-info");
+	
+	//add alert color to previous question in panel
+			var previousQColor=document.getElementById(id.split("q")[0]+"qp"+previousQId);
+			previousQColor.classList.add("alert");
+			previousQColor.classList.add("alert-info");
+	
+	//add previous question in the classlist of previous and previous button
+			//removing
+			document.getElementById("nextBtn").className="";
+			document.getElementById("previousBtn").className="";
+			//now adding
+			document.getElementById("nextBtn").classList.add(id.split("q")[0]+"q"+previousQId);
+			document.getElementById("previousBtn").classList.add(id.split("q")[0]+"q"+previousQId);
 	
 }
+
 </script>
 
 
