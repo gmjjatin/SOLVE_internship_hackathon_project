@@ -150,7 +150,7 @@ if(session.getAttribute("uemail")==null){
         
         	<div class="row">
         	<br>
-        	<h2>general ipsum 1</h2>
+        	<h5>general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 </h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -169,7 +169,7 @@ if(session.getAttribute("uemail")==null){
         
         <div class="row">
         <br>
-        	<h2>general ipsum 2</h2>
+        	<h5>general ipsum 2</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -188,7 +188,7 @@ if(session.getAttribute("uemail")==null){
         
         <div class="row">
         <br>
-        	<h2>general ipsum 3</h2>
+        	<h5>general ipsum 3</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -213,7 +213,7 @@ if(session.getAttribute("uemail")==null){
         
         	<div class="row">
         	<br>
-        	<h2>maths ipsum 1</h2>
+        	<h5>maths ipsum 1</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -232,7 +232,7 @@ if(session.getAttribute("uemail")==null){
         
         <div class="row">
         <br>
-        	<h2>maths ipsum 2</h2>
+        	<h5>maths ipsum 2</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -250,7 +250,7 @@ if(session.getAttribute("uemail")==null){
         
         <div class="row">
         <br>
-        	<h2>maths ipsum 3</h2>
+        	<h5>maths ipsum 3</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -274,7 +274,7 @@ if(session.getAttribute("uemail")==null){
         	
         	<div class="row">
         	<br>
-        	<h2>science ipsum 1</h2>
+        	<h5>science ipsum 1</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -293,7 +293,7 @@ if(session.getAttribute("uemail")==null){
         
         <div class="row">
         <br>
-        	<h2>science ipsum 2</h2>
+        	<h5>science ipsum 2</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
@@ -312,7 +312,7 @@ if(session.getAttribute("uemail")==null){
         
         <div class="row">
         <br>
-        	<h2>science ipsum 3</h2>
+        	<h5>science ipsum 3</h5>
         	<hr>
         	<div class="col-lg-6">
         	<div class="option">
