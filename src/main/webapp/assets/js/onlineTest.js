@@ -25,6 +25,7 @@ function startTest(){
 }
 
 function changeSection(e){
+	
 	//hide all the section
 	var hideClassName=document.getElementsByClassName("section");
 	for(var i=0;i<hideClassName.length;i++)
@@ -66,6 +67,7 @@ function changeSection(e){
 	
 }
 function changeQuestion(e){
+	checkIfAnsweredOrNot();
 	//getting the id for determining the section as well
 	var id=e.target.id;
 	
@@ -101,7 +103,7 @@ function changeQuestion(e){
 }
 
 function changeToNextQuestion(e){
-	
+	checkIfAnsweredOrNot();
 	var id=e.target.classList[2];
 	nextQId=parseInt(id.split("q")[1],10);
 	nextQId++;
@@ -138,7 +140,7 @@ function changeToNextQuestion(e){
 		document.getElementById("previousBtn").classList.add(id.split("q")[0]+"q"+nextQId);
 }
 function changeToPreviousQuestion(e){
-	
+	checkIfAnsweredOrNot();
 	var id=e.target.classList[2];
 	var previousQId=parseInt(id.split("q")[1],10);
 	previousQId--;
@@ -174,3 +176,50 @@ function changeToPreviousQuestion(e){
 	
 }
 
+//for warning color on btn
+function markForReview(){
+	var t=document.querySelector(".qpBtn:not(.hide) .alert-info:not(.hide)")
+	if(t.classList.contains("btn-danger")){
+		t.classList.remove("btn-danger")
+	}
+	t.classList.add("btn-warning")
+}
+//for red color on btn
+function checkIfAnsweredOrNot(){
+	var t=document.querySelectorAll(".section:not(.hide) .col-lg-12:not(.hide) input");
+	var bool=false;
+	t.forEach((el)=>{
+		console.log("before ",bool)
+		bool=bool||el.checked;
+		console.log("after ",bool)
+	})
+	t=document.querySelector(".qpBtn:not(.hide) .alert-info:not(.hide)");
+	if(t.classList.contains("btn-warning")){
+		return;
+	}
+	if(bool){
+		t.classList.add("btn-success");
+	}
+	else{
+		t.classList.add("btn-danger");
+	}
+	
+}
+//for reviewed ,unanswered , marked color toggle
+$('input[type="radio"]').on('click', function(e) {
+	var t=document.querySelector(".qpBtn:not(.hide) .alert-info:not(.hide)");
+	//for marked
+	if(t.classList.contains("btn-warning")){
+		t.classList.remove("btn-warning");
+		t.classList.add("btn-info") ;
+		return;
+	}
+	//toggle for danger color
+	if(t.classList.contains("btn-danger")){
+		t.classList.remove("btn-danger");
+		t.classList.add("btn-success") ;
+		return;
+	}
+	//for answered
+	t.classList.add("btn-success") ;
+	});

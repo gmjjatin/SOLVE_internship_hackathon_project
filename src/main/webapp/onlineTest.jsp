@@ -33,7 +33,7 @@ if(session.getAttribute("uemail")==null){
 
 </head>
 
-<body style="overflow-x:hidden !important;">
+<body style="overflow-x:hidden !important;height:100%;">
 
 		<nav class="navbar navbar-default bootsnav navbar-fixed white on menu-center no-full" id="navbar">
             <div class="container">
@@ -86,8 +86,8 @@ if(session.getAttribute("uemail")==null){
         </nav>	
         
 		
-        <div class="col-lg-12" style="text-align:center; margin-top:5rem;">
-        <div class="row" id="startTest">
+        <div class="col-lg-12" style="text-align:center; margin-top:1rem; height:78%;">
+        <div class="row" id="startTest" style="height:100%;">
         	<button type="button" class="btn btn-start-test" onclick="startTest()">START TEST !</button>
         </div>
 		<div class="row" id="testPaper">
@@ -108,6 +108,19 @@ if(session.getAttribute("uemail")==null){
 		<button class="btn btn-light GeneralBtn  alert alert-info" id="Generalqp1" onclick="changeQuestion(event)">Q1</button>
 		<button class="btn btn-light GeneralBtn" id="Generalqp2" onclick="changeQuestion(event)">Q2</button>
 		<button class="btn btn-light GeneralBtn" id="Generalqp3" onclick="changeQuestion(event)">Q3</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp4" onclick="changeQuestion(event)">Q4</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp5" onclick="changeQuestion(event)">Q5</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp6" onclick="changeQuestion(event)">Q6</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp7" onclick="changeQuestion(event)">Q7</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp8" onclick="changeQuestion(event)">Q8</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp9" onclick="changeQuestion(event)">Q9</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp10" onclick="changeQuestion(event)">Q10</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp11" onclick="changeQuestion(event)">Q11</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp12" onclick="changeQuestion(event)">Q12</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp13" onclick="changeQuestion(event)">Q13</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp14" onclick="changeQuestion(event)">Q14</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp15" onclick="changeQuestion(event)">Q15</button>
+		<button class="btn btn-light GeneralBtn" id="Generalqp16" onclick="changeQuestion(event)">Q16</button>
 		</div>
 		<!-- for Maths section :question btn -->
 		<div class="col-xs-12 qpBtn hide" id="MathsBtn"> 
@@ -135,8 +148,8 @@ if(session.getAttribute("uemail")==null){
         </div>
         
         <div class="col-lg-8 col-xs-10 questionContent">
-        <div class="row alert alert-lightblue">
-        <div class="col-12 ">
+        <div class="row alert alert-lightblue" >
+        <div class="col-12" >
         	<button class="btn btn-primary" type="button" onClick="changeSection(event)">General</button>
         	<button class="btn btn-primary" type="button" onClick="changeSection(event)">Maths</button> 
         	<button class="btn btn-primary" type="button" onClick="changeSection(event)">Science</button>
@@ -145,22 +158,22 @@ if(session.getAttribute("uemail")==null){
         </div>
         
         <form>
-        <div class="row white section" id="General">
+        
+        <div class="row white section" id="General" style="overflow:auto; height:380px;">
         <div class="col-lg-12 General" id="Generalq1">
         
         	<div class="row">
         	<br>
         	<h5>general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 general ipsum 1 </h5>
         	<hr>
-        	<div class="col-lg-6">
-        	<div class="option">
+        	<div class="col-lg-6"> 
+
         	 
         	<label><input type="radio" name="q1" value="1.science ipsum"> 1.general ipsum1</label><br>
         	<label><input type="radio" name="q1" value="2.science ipsum"> 2.general ipsum1</label><br>
         	<label><input type="radio" name="q1" value="3.science ipsum"> 3.general ipsum1</label><br>
         	<label><input type="radio" name="q1" value="4.science ipsum"> 4.general ipsum1</label>
         	 
-        	</div>
         	</div>
         	
         	</div>
@@ -172,14 +185,13 @@ if(session.getAttribute("uemail")==null){
         	<h5>general ipsum 2</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	
         	<label><input type="radio" name="q2" value="1.science ipsum"> 1.general ipsum2</label><br>
         	<label><input type="radio" name="q2" value="2.science ipsum"> 2.general ipsum2</label><br>
         	<label><input type="radio" name="q2" value="3.science ipsum"> 3.general ipsum2</label><br>
         	<label><input type="radio" name="q2" value="4.science ipsum"> 4.general ipsum2</label>
         	
-        	</div>
         	</div>
         	
         	</div>
@@ -191,7 +203,7 @@ if(session.getAttribute("uemail")==null){
         	<h5>general ipsum 3</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	
         	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
         	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
@@ -199,16 +211,295 @@ if(session.getAttribute("uemail")==null){
         	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
         	
         	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq4">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 3</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
         	</div>
         	
         	</div>
         	
         </div>
+        <div class="col-lg-12 General hide" id="Generalq4">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 4</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq5">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 5</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq6">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 6</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq7">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 7</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq8">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 8</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq9">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 9</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq10">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 10</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq11">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 11</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        
+        <div class="col-lg-12 General hide" id="Generalq12">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 12</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq13">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 13</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq14">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 14</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq15">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 15</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        <div class="col-lg-12 General hide" id="Generalq16">
+        
+        <div class="row">
+        <br>
+        	<h5>general ipsum 16</h5>
+        	<hr>
+        	<div class="col-lg-6">
+
+        	
+        	<label><input type="radio" name="q3" value="1.general ipsum"> 1.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="2.general ipsum"> 2.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="3.general ipsum"> 3.general ipsum3</label><br>
+        	<label><input type="radio" name="q3" value="4.general ipsum"> 4.general ipsum3</label>
+        	
+        	</div>
+        	
+        	</div>
+        	
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         </div>
         
         <!-- for maths section -->
-        <div class="row white section hide" id="Maths">
+        <div class="row white section hide" id="Maths" style="overflow:auto; height:380px;">
         <div class="col-lg-12 Maths" id="Mathsq1">
         
         	<div class="row">
@@ -216,14 +507,13 @@ if(session.getAttribute("uemail")==null){
         	<h5>maths ipsum 1</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	
         	<label><input type="radio" name="q1" value="1.maths ipsum"> 1.maths ipsum1</label><br>
         	<label><input type="radio" name="q1" value="2.maths ipsum"> 2.maths ipsum1</label><br>
         	<label><input type="radio" name="q1" value="3.maths ipsum"> 3.maths ipsum1</label><br>
         	<label><input type="radio" name="q1" value="4.maths ipsum"> 4.maths ipsum1</label>
         	
-        	</div>
         	</div>
         	
         	</div>
@@ -235,14 +525,13 @@ if(session.getAttribute("uemail")==null){
         	<h5>maths ipsum 2</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	
         	<label><input type="radio" name="q2" value="1.maths ipsum"> 1.maths ipsum2</label><br>
         	<label><input type="radio" name="q2" value="2.maths ipsum"> 2.maths ipsum2</label><br>
         	<label><input type="radio" name="q2" value="3.maths ipsum"> 3.maths ipsum2</label><br>
         	<label><input type="radio" name="q2" value="4.maths ipsum"> 4.maths ipsum2</label>
         	
-        	</div>
         	</div>
         	</div>
         </div>
@@ -253,14 +542,13 @@ if(session.getAttribute("uemail")==null){
         	<h5>maths ipsum 3</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	 
         	<label><input type="radio" name="q3" value="1.maths ipsum"> 1.maths ipsum3</label><br>
         	<label><input type="radio" name="q3" value="2.maths ipsum"> 2.maths ipsum3</label><br>
         	<label><input type="radio" name="q3" value="3.maths ipsum"> 3.maths ipsum3</label><br>
         	<label><input type="radio" name="q3" value="4.maths ipsum"> 4.maths ipsum3</label>
         	 
-        	</div>
         	</div>
         	
         	</div>
@@ -269,7 +557,7 @@ if(session.getAttribute("uemail")==null){
         
         </div>
         <!-- for general science -->
-        <div class="row white section hide" id="Science" >
+        <div class="row white section hide" id="Science" style="overflow:auto;height:380px;">
         <div class="col-lg-12 Science" id="Scienceq1">
         	
         	<div class="row">
@@ -277,33 +565,33 @@ if(session.getAttribute("uemail")==null){
         	<h5>science ipsum 1</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	 
         	<label><input type="radio" name="q1" value="1.science ipsum"> 1.science ipsum 1</label><br>
         	<label><input type="radio" name="q1" value="2.science ipsum"> 2.science ipsum 1</label><br>
         	<label><input type="radio" name="q1" value="3.science ipsum"> 3.science ipsum 1</label><br>
         	<label><input type="radio" name="q1" value="4.science ipsum"> 4.science ipsum 1</label>
         	 
-        	</div>
+        	
         	</div>
         	
         	</div>
         </div>
-        <div class="col-lg-12 Science hide" id="Scienceq2" >
+        <div class="col-lg-12 Science hide" id="Scienceq2">
         
         <div class="row">
         <br>
         	<h5>science ipsum 2</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	 
         	<label><input type="radio" name="q2" value="1.science ipsum"> 1.science ipsum 2</label><br>
         	<label><input type="radio" name="q2" value="2.science ipsum"> 2.science ipsum 2</label><br>
         	<label><input type="radio" name="q2" value="3.science ipsum"> 3.science ipsum 2</label><br>
         	<label><input type="radio" name="q2" value="4.science ipsum"> 4.science ipsum 2</label>
         	 
-        	</div>
+        	
         	</div>
         	
         	</div>
@@ -315,14 +603,14 @@ if(session.getAttribute("uemail")==null){
         	<h5>science ipsum 3</h5>
         	<hr>
         	<div class="col-lg-6">
-        	<div class="option">
+
         	 
         	<label><input type="radio" name="q3" value="1.science ipsum"> 1.science ipsum 3</label><br>
         	<label><input type="radio" name="q3" value="2.science ipsum"> 2.science ipsum 3</label><br>
         	<label><input type="radio" name="q3" value="3.science ipsum"> 3.science ipsum 3</label><br>
         	<label><input type="radio" name="q3" value="4.science ipsum"> 4.science ipsum 3</label>
         	 
-        	</div>
+        	
         	</div>
         	
         	</div>
@@ -330,11 +618,12 @@ if(session.getAttribute("uemail")==null){
         </div>
         
         </div>
+        
 		<br>
 		<div class="row alert alert-lightblue">
 		
 			<div class="col-lg-6">
-			<button type="button" class="btn btn-warning Generalq1" id="markBtn" onclick="markForReview(event)" >MARK FOR REVIEW</button>
+			<button type="button" class="btn btn-warning Generalq1" id="markBtn" onclick="markForReview()" >MARK FOR REVIEW</button>
         	<button type="button" class="btn btn-info Generalq1" id="previousBtn" onclick="changeToPreviousQuestion(event)" >PREVIOUS</button>
         	<button type="button" class="btn btn-info Generalq1" id="nextBtn" onclick="changeToNextQuestion(event)" >NEXT</button>
         	</div>
@@ -352,9 +641,6 @@ if(session.getAttribute("uemail")==null){
         </div>
         </div>
 		<div id="break" class="hide">
-		<br>
-		<br>
-		<br>
 		<br>
 		</div>	
 	
@@ -396,6 +682,7 @@ if(session.getAttribute("uemail")==null){
     <script type="text/javascript" src="./assets/js/index.js"></script>
     
     <script src="assets/js/onlineTest.js"></script>
+    
 
 </body></html>
 
