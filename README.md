@@ -17,7 +17,8 @@ UI of webiste:
 Along with HTML ,CSS ,Bootstrap -- swiper.js , jquery easy /lazy load , page loader , jquery scroll up and down has been used.
 
 Application logic:
-It accepts a form which passes the action to a Java servlet .Java mailer has also been used to send important mails.
+1.It accepts a form which passes the action to a Java servlet .Java mailer has also been used to send important mails.
+2.It also has online test portal which is made reactive via javascript and is powered by Django framework.
 
 Functionalities : Login , Register authentication , Java mailer for sending important mails to registered users.
 
