@@ -13,10 +13,10 @@ the largest youth led organisation working towards the mission of making Indian 
 of deaths caused by road accidents across India by half till 2020. We are currently active in 50+ cities with over 1700+ 
 volunteers and have impacted more than 1 crore people in across 10 states in India.
 
-UI of webiste:
+##UI of webiste:
 Along with HTML ,CSS ,Bootstrap -- swiper.js , jquery easy /lazy load , page loader , jquery scroll up and down has been used.
 
-Application logic:
+##Application logic:
 
 1.It accepts a form which passes the action to a Java servlet .Java mailer has also been used to send important mails.
 
@@ -24,8 +24,11 @@ Application logic:
 
 Functionalities : Login , Register authentication , Java mailer for sending important mails to registered users.
 
-Deployed on :
+##Deployed on :
 Google cloud platform
 
-Database used :
+##Database used :
 Google Datastore using Objectify and Guava libraries.
+
+##Copyrights :
+The project is for only reference purposes and is not available for contribution.
