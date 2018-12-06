@@ -214,7 +214,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                     </p>
                     <br>
                     <p style="color: rgb(156, 156, 156); padding:0px 5%; font-size: 15px;">
-                        <i>If you’re contemplating judging, volunteering, or mentoring, shoot us an email at <u>info@road-safety.co.in</u>.
+                        <i>If youâre contemplating judging, volunteering, or mentoring, shoot us an email at <u>info@road-safety.co.in</u>.
                             If your company is interested in becoming a sponsor, check out the sponsorship section
                             below.</i>
                     </p>
@@ -231,7 +231,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                 <div class="row" style="justify-content: center; padding: 20px 10%;">
                     <div class="col-md-12" style="color: #fbfcfd">
                         <p style="color: #dce6f1; font-size: 15px;">
-                            For over five decades, BIT Mesra (located 16 kms from Ranchi, the Jharkhand
+                            For over five decades, IRSC (located 16 kms from Ranchi, the Jharkhand
                             state-capital)has been engaged in nurturing minds through a rich heritage of academic
                             excellence. Essentially a hub of bustling student activities, the beautiful campus has been
                             a second-home to thousands of students in their journey to challenge the times.
@@ -247,7 +247,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                             reputation in academia and corporate circles being the preferred manpower source for many
                             industries not only in India but also abroad.
                             <br><br>
-                            BIT Mesra had been conceived with a vision to be recognized as a world-class learning
+                            IRSC had been conceived with a vision to be recognized as a world-class learning
                             institution for engineering and technology. But it has moved beyond the fulfillment of a
                             scholastic promise to re-defining education in the new age through creation of aptitude and
                             comprehensive intelligence. Targets are achieved everyday, only to make space for newer
@@ -272,7 +272,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                     <div class="col-md-6 col-md-pull-6" style="color: #283e4e">
                         <p style="color: #2d485c; font-size: 15px;">When you think of hyenas, what springs to mind?
                             Scavenging?
-                            Cackling cries? Or a creepy creature? Well, it turns out there’s so much more to these
+                            Cackling cries? Or a creepy creature? Well, it turns out thereâs so much more to these
                             incredible
                             creatures. They have a reputation of taking up the leftovers. But don't be fooled! These
                             cool
@@ -594,7 +594,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                                 <p class="card-text" style="padding-top: 10%;">
                                     </p><center style="padding-top: 10%; padding-bottom: 30%;">
                                         <img src="assets/images/1st.png" class="img-fluid img" style="width: 50%"><br><br>
-                                        <p>₹ 25,000 Cash<br>+<br>Goodies.<br></p>
+                                        <p>&#8377; 20,000 Cash<br>+<br>Goodies.<br></p>
                                     </center>
                                 <p></p>
                                 <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
@@ -611,7 +611,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                                 <p class="card-text" style="padding-top: 10%;">
                                     </p><center style="padding-top: 10%; padding-bottom: 30%;">
                                         <img src="assets/images/2nd.png" class="img-fluid img" style="width: 50%"><br><br>
-                                        <p>₹ 15,000 Cash<br>+<br>Goodies.<br></p>
+                                        <p>&#8377; 15,000 Cash<br>+<br>Goodies.<br></p>
                                     </center>
                                 <p></p>
                                 <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
@@ -628,7 +628,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                                 <p class="card-text" style="padding-top: 10%;">
                                     </p><center style="padding-top: 10%; padding-bottom: 30%;">
                                         <img src="assets/images/3rd.png" class="img-fluid img" style="width: 50%"><br><br>
-                                        <p>₹ 10,000 Cash<br>+<br>Goodies.<br></p>
+                                        <p>&#8377; 10,000 Cash<br>+<br>Goodies.<br></p>
                                     </center>
                                 <p></p>
                                 <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
@@ -804,7 +804,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                                 <p class="card-text" style="padding-top: 10%;">
                                     </p><center style="padding-top: 10%; padding-bottom: 30%;">
                                         <img src="assets/images/zebronics-min.jpg" class="img-fluid img" style="width: 50%"><br><br>
-                                        <p> Goodies Worth ₹ 10,000 <br>to<br>Winners<br></p>
+                                        <p> Goodies Worth &#8377; 10,000 <br>to<br>Winners<br></p>
                                     </center>
                                 <p></p>
                                 <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
@@ -843,7 +843,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                                         <img src="assets/images/hasura.png" class="img-fluid img" style="width: 70%"><br><br>
                                         <br>
                                         <br>
-                                        <p> ₹ 5,000 Amazon Gift Coupon<br><br><br></p>
+                                        <p> &#8377; 5,000 Amazon Gift Coupon<br><br><br></p>
                                     </center>
                                 <p></p>
                                 <h5 class="card-title" style="background-color: #ff1745EE; color: #fff; padding: 5%; margin-top: 3%; margin-bottom: 10%;">
@@ -954,12 +954,12 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <button type="button" class="close" data-dismiss="modal">Ã</button>
                     <h4 class="modal-title">Hoolah Challenge</h4>
                 </div>
                 <div class="modal-body">
                     <p>Debt collection has a tarnished image.<br>
-                        How would you digitize consumer “debt collection” and use technology to change the way people
+                        How would you digitize consumer âdebt collectionâ and use technology to change the way people
                         think and behave to pay outstanding debts?</p>
                 </div>
                 <div class="modal-footer">
@@ -973,24 +973,24 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
     <section id="jury" class="loading-hide" style="background-color: rgb(236, 236, 236); display: block;">
         <div class="container-fluid">
             <h2 class="text-center heading" style="padding-top: 2vh; color: #182835;">Judges and Mentors</h2>
-            <div class="row">
+            <div class="row" style="text-align: center;">
                 <div class="col-md-2"></div>
-                <div class="col-md-4" style="text-align: center">
+                <!-- <div class="col-md-4" style="text-align: center">
                     <img src="assets/images/1.jpg" style="width: 200px; border-radius: 100px;">
-                </div>
-                <div class="col-md-4" style="padding-top: 25px; text-align: center;">
-                    <h3 style="color: #000;">DUMMY JUDGE 1</h3>
-                    <p style="font-size: 14px;">
+                </div> -->
+                <div class="col-md-10" style="padding-top: 25px;display:inline-block; text-align: center; background-color:white;border-radius:10px;width:80%;">
+                    <h3 style="color: #000; display:inline-block;">Judges will be from IIT Delhi , Toyota .Road safety experts will also be there for guidance and as mentors.</h3>
+                    <!-- <p style="font-size: 14px;">
                         Founder &amp; Technology Evangelist, Itversity&nbsp;Inc.<br>
                         Domain - App Development, Big Data, Cloud &amp; DevOps, Data warehousing
                     </p>
                     <p>
                         <a target="_blank" href="https://www.linkedin.com/in/" ><i class="fab fa-linkedin-in"></i></a>
-                    </p>
+                    </p> -->
                 </div>
             </div>
 
-            <div class="row" style="margin-top: 100px;">
+            <!-- <div class="row" style="margin-top: 100px;">
                 <div class="col-md-2"></div>
                 <div class="col-md-4" style="padding-top: 25px; text-align: center;">
                     <h3 style="color: #000;">DUMMY JUDGE 2</h3>
@@ -1004,9 +1004,9 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                 <div class="col-md-4" style="text-align: center">
                     <img src="assets/images/2.png" style="width: 200px; border-radius: 100px;">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="row" style="margin-top: 100px;">
+            <!-- <div class="row" style="margin-top: 100px;">
                 <div class="col-md-2"></div>
                 <div class="col-md-4" style="text-align: center; vertical-align: middle">
                     <img src="assets/images/1.jpg" style="width: 200px; border-radius: 100px; vertical-align: middle">
@@ -1019,7 +1019,7 @@ Hackathon is being organised by Toyota and IL&FS and is inspired by Indian Road 
                     <p>
                     </p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="row" style="margin-top: 100px;">
                 <div class="col-md-2"></div>
@@ -1112,13 +1112,13 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                                         <div class="caption1">
                                                             <p>&nbsp;As they say, the fruit obtained by hard work is always
                                                                 sweeter,
-                                                                the students of BIT Mesra have worked with intricate
+                                                                the students of IRSC have worked with intricate
                                                                 dedication
                                                                 to transform a seemingly unthinkable idea into reality.
                                                                 As
                                                                 their hard work and perseverance draws fruits of
                                                                 accomplishment,
-                                                                'Hack-A-BIT', our college's maiden Hackathon shall be a
+                                                                Toyota hackahton: Code for Safer India 2018, this will be an
                                                                 unique
                                                                 platform for the amalgamation of different ideas from
                                                                 the
@@ -1127,8 +1127,8 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                                                 <br><br> So, innovate, implement and initiate your
                                                                 groundbreaking
                                                                 ideas to see them come to life at the echelon of free
-                                                                thinking,
-                                                                'HACK-A-BIT'.</p>
+                                                                thinking, Toyota hackahton: Code for Safer India 2018
+                                                                .</p>
                                                             <blockquote class="adjust2">
                                                                 <p>DUMMY EVENT 1</p> <small><cite title="Source Title">
                                                                          Students' Welfare</cite></small>
@@ -1169,7 +1169,7 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                                                 expecting
                                                                 the teams from all premier institutes all over India.
                                                                 This
-                                                                event is certainly going to become India’s largest
+                                                                event is certainly going to become Indiaâs largest
                                                                 technical
                                                                 event.
                                                                 <br><br>Looking forward for your participation in this
@@ -1193,7 +1193,7 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                                     <div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive" src="assets/images/dku.jpg"> </div>
                                                     <div class="col-md-10 col-sm-10 col-xs-12">
                                                         <div class="caption1">
-                                                            <p>&nbsp;Techies of IET On Campus, BIT Mesra have come together
+                                                            <p>&nbsp;Techies of IIT On Campus, IRSC have come together
                                                                 with
                                                                 ACM and IEEE Students' body, to provide a platform to
                                                                 the
@@ -1204,7 +1204,7 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                                                 help such students to showcase their talent and
                                                                 expressive
                                                                 minds. I wish good luck to everyone associated with
-                                                                HACK-A-BIT.
+                                                                Toyota hackahton: code for Safer India 2018.
                                                                 Looking forward to a brilliant event.
                                                             </p>
                                                             <blockquote class="adjust2">
@@ -1217,7 +1217,7 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item">
+                                    <!-- <div class="item">
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <div class="thumbnail adjust1">
@@ -1232,7 +1232,7 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                                                 projects.
                                                                 Wholesome participation is encouraged in the upcoming
                                                                 East
-                                                                India’s Largest Students’ Hackathon and care shall also
+                                                                Indiaâs Largest Studentsâ Hackathon and care shall also
                                                                 be
                                                                 taken to ensure the well-being and happiness of each
                                                                 and
@@ -1251,7 +1251,7 @@ solutions, that has the potential to bring a real change, would be rewarded.
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         
