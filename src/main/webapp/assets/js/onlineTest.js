@@ -1,17 +1,36 @@
+//timer var for setTimerValue() for each question screen time
+var timerVar;
+//counter variable for clock test time
+var count;
+
+//on submit of the anwsers either by user or by js
+function onSubmit(){
+	//to be filled with a request to the 
+	// http://hackathon.solvefoundation.org/submit
+	//which will redirect to submission page
+	console.log("submitted");
+}
+
+//on start button click
 function startTest(){
+	//adding the feature of passing input values from one form to another
+	document.getElementById('team').value=document.getElementById('InputTeam1').value;
+	document.getElementById('school').value=document.getElementById('InputSchool1').value;
+	
+	
 	document.getElementById("startTest").style.display="none";
 	document.getElementById("footer").style.display="none";
 	document.getElementById("navbar").style.display="none";
 	document.getElementById("testPaper").style.display="block";
 	document.getElementById("timer").style.display="inline-block";
 	document.getElementById("break").classList.remove("hide");
-	var count = 60*60;
+	count = 4500;
 	var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
 	function timer() {
 	    count = count - 1;
 	    if (count == -1) {
 	        clearInterval(counter);
-	        return;
+	        return onSubmit();
 	    }
 
 	    var seconds = count % 60;
@@ -22,9 +41,25 @@ function startTest(){
 
 	    document.getElementById("timer").innerHTML ="Time: "+ hours +":"+ minutes +":"+ seconds ;
 	}
+	
+	//timer function called at start of the test for given question on screen
+	  timerVar=setInterval(setTimerValue,1000);
 }
+//<!-- ##### each question timer function script ##### -->
+  function setTimerValue(){
+	  clearInterval(timerVar);
+	   var target=document.querySelector(".section:not(.hide) .col-lg-12:not(.hide) .questionTimer");
+	   
+	    target.value=target.valueAsNumber+1;
+	   
+	    timerVar=setInterval(setTimerValue,1000);
+	   
+	 }
+//<!-- ##### each question timer function script Ends##### -->
 
 function changeSection(e){
+	//timer function called for change in section
+	setTimerValue();
 	
 	//hide all the section
 	var hideClassName=document.getElementsByClassName("section");
@@ -59,7 +94,7 @@ function changeSection(e){
 	//find current question id
 	var q=document.querySelector("."+showId+"Btn.alert-info");
 	
-	console.log(q)
+	
 	var currentQIdNo=q.id.split("p")[1];
 	//now adding
 	document.getElementById("nextBtn").classList.add(showId+"q"+currentQIdNo);
@@ -67,6 +102,10 @@ function changeSection(e){
 	
 }
 function changeQuestion(e){
+	//timer function called for change in section
+	setTimerValue();
+	
+	
 	checkIfAnsweredOrNot();
 	//getting the id for determining the section as well
 	var id=e.target.id;
@@ -103,6 +142,10 @@ function changeQuestion(e){
 }
 
 function changeToNextQuestion(e){
+	//timer function called for change in section
+	setTimerValue();
+	
+	
 	checkIfAnsweredOrNot();
 	var id=e.target.classList[2];
 	nextQId=parseInt(id.split("q")[1],10);
@@ -140,6 +183,9 @@ function changeToNextQuestion(e){
 		document.getElementById("previousBtn").classList.add(id.split("q")[0]+"q"+nextQId);
 }
 function changeToPreviousQuestion(e){
+	//timer function called for change in section
+	setTimerValue();
+	
 	checkIfAnsweredOrNot();
 	var id=e.target.classList[2];
 	var previousQId=parseInt(id.split("q")[1],10);
@@ -189,9 +235,9 @@ function checkIfAnsweredOrNot(){
 	var t=document.querySelectorAll(".section:not(.hide) .col-lg-12:not(.hide) input");
 	var bool=false;
 	t.forEach((el)=>{
-		console.log("before ",bool)
+		
 		bool=bool||el.checked;
-		console.log("after ",bool)
+		
 	})
 	t=document.querySelector(".qpBtn:not(.hide) .alert-info:not(.hide)");
 	if(t.classList.contains("btn-warning")){
