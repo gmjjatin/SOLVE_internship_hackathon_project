@@ -44,6 +44,10 @@ function startTest(){
 	
 	//timer function called at start of the test for given question on screen
 	  timerVar=setInterval(setTimerValue,1000);
+
+ 	//checking for last or first question for disabled functionality
+	checkLastOrFirstQuestion();
+
 }
 //<!-- ##### each question timer function script ##### -->
   function setTimerValue(){
@@ -100,6 +104,10 @@ function changeSection(e){
 	document.getElementById("nextBtn").classList.add(showId+"q"+currentQIdNo);
 	document.getElementById("previousBtn").classList.add(showId+"q"+currentQIdNo);
 	
+	//checking for last or first question for disabled functionality
+	checkLastOrFirstQuestion();
+
+	
 }
 function changeQuestion(e){
 	//timer function called for change in section
@@ -138,14 +146,17 @@ function changeQuestion(e){
 	document.getElementById("nextBtn").classList.add(id.split("p")[0]+id.split("p")[1]);
 	document.getElementById("previousBtn").className="btn btn-info";
 	document.getElementById("previousBtn").classList.add(id.split("p")[0]+id.split("p")[1]);
+
+	//checking for last or first question for disabled functionality
+	checkLastOrFirstQuestion();
 	
 }
 
 function changeToNextQuestion(e){
 	//timer function called for change in section
 	setTimerValue();
-	
-	
+
+
 	checkIfAnsweredOrNot();
 	var id=e.target.classList[2];
 	nextQId=parseInt(id.split("q")[1],10);
@@ -181,11 +192,16 @@ function changeToNextQuestion(e){
 		//now adding
 		document.getElementById("nextBtn").classList.add(id.split("q")[0]+"q"+nextQId);
 		document.getElementById("previousBtn").classList.add(id.split("q")[0]+"q"+nextQId);
+
+	//checking for last or first question for disabled functionality
+	checkLastOrFirstQuestion();
+
 }
 function changeToPreviousQuestion(e){
 	//timer function called for change in section
 	setTimerValue();
 	
+
 	checkIfAnsweredOrNot();
 	var id=e.target.classList[2];
 	var previousQId=parseInt(id.split("q")[1],10);
@@ -219,6 +235,9 @@ function changeToPreviousQuestion(e){
 			//now adding
 			document.getElementById("nextBtn").classList.add(id.split("q")[0]+"q"+previousQId);
 			document.getElementById("previousBtn").classList.add(id.split("q")[0]+"q"+previousQId);
+
+	//checking for last or first question for disabled functionality
+	checkLastOrFirstQuestion();
 	
 }
 
@@ -269,3 +288,24 @@ $('input[type="radio"]').on('click', function(e) {
 	//for answered
 	t.classList.add("btn-success") ;
 	});
+
+function checkLastOrFirstQuestion(){
+	var t=document.querySelector(".section:not(.hide) .col-lg-12:not(.hide)");
+
+	t=t.id.split('q')[1]
+	
+	
+	if(t==='10')
+		{document.getElementById('nextBtn').disabled=true;
+		document.getElementById('previousBtn').disabled=false;
+		}
+	else if(t==='1')
+		{document.getElementById('previousBtn').disabled=true;
+		document.getElementById('nextBtn').disabled=false;
+		}
+	else
+		{document.getElementById('nextBtn').disabled=false;
+		document.getElementById('previousBtn').disabled=false;
+		
+		}
+}
